@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+
+<!-- TODO:
+                    Regulate fonts: https://css-tricks.com/snippets/css/using-font-face/
+                    Hide scroll bar
+                    Link progress bar to slider(later feature)!
+                    Style links and text
+                -   Put images in pages
+                -   Add pages
+                - done  Prvi kolaz slider: dekoracije
+                - done  Drugi K.S. : Vencanice
+                - done  Ftab stays at bottom in page mode
+                -   h1 font-weight 400 ili 500
+                --Partnerstvo sa plumeriom?
+-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Plumeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- CSS files -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <!-- Javascript files -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Josefin+Sans:400,600,700|Yellowtail"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="shapes up right">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="100%"
+            y="0px" viewBox="0 0 95.5 34.7" style="enable-background:new 0 0 95.5 34.7;" xml:space="preserve">
+            <style type="text/css">
+                .st0 {
+                    opacity: 0.45;
+                }
+                .stur1 {
+                    fill: url(#SVGID_1_);
+                }
+            </style>
+            <g class="st0">
+                <g>
+
+                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="240.3354" y1="943.9394" x2="56.0372"
+                        y2="837.5348" gradientTransform="matrix(0.8518 0.5239 -0.5239 0.8518 352.9547 -903.046)">
+                        <stop offset="0" style="stop-color:#E8C36F" />
+                        <stop offset="0.2398" style="stop-color:#BB842C" />
+                        <stop offset="0.5153" style="stop-color:#7E5824" />
+                        <stop offset="0.8571" style="stop-color:#E8C36F" />
+                    </linearGradient>
+                    <polygon class="stur1" points="95.7,4 50.7,32.7 5,-0.1 3.7,-0.1 50.5,33.5 50.7,33.6 95.7,4.9         " />
+                </g>
+            </g>
+        </svg>
+    </div>
+    <div class="shapes up right">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 95.5 34.7" style="enable-background:new 0 0 95.5 34.7;" xml:space="preserve">
+            <style type="text/css">
+                .stur2 {
+                    fill: url(#SVGID_2_);
+                }
+            </style>
+            <g class="st0">
+                <g>
+                    <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="990.5949" y1="1259.2799" x2="775.3882"
+                        y2="1135.0303" gradientTransform="matrix(-0.1554 0.9878 -0.9878 -0.1554 1423.2292 -742.394)">
+                        <stop offset="0" style="stop-color:#E8C36F" />
+                        <stop offset="0.2398" style="stop-color:#BB842C" />
+                        <stop offset="0.5153" style="stop-color:#7E5824" />
+                        <stop offset="0.8571" style="stop-color:#E8C36F" />
+                    </linearGradient>
+                    <polygon class="stur2" points="95.5,14.4 14.1,30.3 0,10.1 0,11.5 13.6,30.9 13.8,31.1 95.5,15.1         " />
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div class="shapes down right narrower">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 37.9 71" style="enable-background:new 0 0 37.9 71;" xml:space="preserve">
+            <style type="text/css">
+                .stdr1 {
+                    fill: url(#SVGID_3_);
+                }
+            </style>
+            <g class="st0">
+                <g>
+
+                    <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="984.7177" y1="-78.8717" x2="774.9625"
+                        y2="-199.9739" gradientTransform="matrix(0.7854 -0.619 0.619 0.7854 -513.8842 679.8522)">
+                        <stop offset="0" style="stop-color:#E8C36F" />
+                        <stop offset="0.2398" style="stop-color:#BB842C" />
+                        <stop offset="0.5153" style="stop-color:#7E5824" />
+                        <stop offset="0.8571" style="stop-color:#E8C36F" />
+                    </linearGradient>
+                    <polygon class="stdr1" points="10.5,19.6 38,1.8 38,1 9.8,19.2 0.9,71.1 1.6,71.1         " />
+                </g>
+            </g>
+        </svg>
+    </div>
+    <div class="shapes down right narrow">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 47.5 45.6" style="enable-background:new 0 0 47.5 45.6;" xml:space="preserve">
+            <style type="text/css">
+                .stdr2 {
+                    fill: url(#SVGID_4_);
+                }
+            </style>
+            <g class="st0">
+                <g>
+
+                    <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="1853.5156" y1="21.2947" x2="1643.7612"
+                        y2="-99.8071" gradientTransform="matrix(-0.4667 -0.8844 0.8844 -0.4667 871.6127 1649.9924)">
+                        <stop offset="0" style="stop-color:#E8C36F" />
+                        <stop offset="0.2398" style="stop-color:#BB842C" />
+                        <stop offset="0.5153" style="stop-color:#7E5824" />
+                        <stop offset="0.8571" style="stop-color:#E8C36F" />
+                    </linearGradient>
+                    <polygon class="stdr2" points="42.1,2.2 47.5,2.8 47.5,2 42,1.4 41.8,1.4 1.6,45.7 2.6,45.7         " />
+                </g>
+            </g>
+        </svg>
+    </div>
+    <div class="shapes down right">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 59.3 27.8" style="enable-background:new 0 0 59.3 27.8;" xml:space="preserve">
+            <style type="text/css">
+                .stdr3 {
+                    fill: url(#SVGID_5_);
+                }
+            </style>
+            <g class="st0">
+                <g>
+
+                    <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="595.0037" y1="606.6464" x2="393.7669"
+                        y2="490.4623" gradientTransform="matrix(0.8651 0.5017 -0.5017 0.8651 -71.4017 -619.4089)">
+                        <stop offset="0" style="stop-color:#E8C36F" />
+                        <stop offset="0.2398" style="stop-color:#BB842C" />
+                        <stop offset="0.5153" style="stop-color:#7E5824" />
+                        <stop offset="0.8571" style="stop-color:#E8C36F" />
+                    </linearGradient>
+                    <polygon class="stdr3" points="5.8,12.4 0.7,27.8 1.5,27.8 6.4,13 59.5,1.8 59.5,1.1         " />
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div class="shapes down left">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 59.3 27.8" style="enable-background:new 0 0 59.3 27.8;" xml:space="preserve">
+            <style type="text/css">
+                .stdl1 {
+                    fill: url(#SVGID_6_);
+                }
+            </style>
+            <g class="st0">
+                <g>
+
+                    <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="197.3762" y1="808.6183" x2="462.1636"
+                        y2="808.6183" gradientTransform="matrix(-0.886 0.4636 -0.4636 -0.886 613.3846 622.4667)">
+                        <stop offset="0" style="stop-color:#E8C36F" />
+                        <stop offset="0.2398" style="stop-color:#BB842C" />
+                        <stop offset="0.5153" style="stop-color:#7E5824" />
+                        <stop offset="0.8571" style="stop-color:#E8C36F" />
+                    </linearGradient>
+                    <polygon class="stdl1" points="26.3,28 27.6,28 9.8,14.6 9.6,14.5 0,19.1 0,20 9.5,15.3         " />
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div class="shapes down left">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 62.8 47.6" style="enable-background:new 0 0 44.8 67.6;" xml:space="preserve">
+            <style type="text/css">
+                .stdl2 {
+                    fill: url(#SVGID_7_);
+                }
+            </style>
+            <g class="st0">
+                <g>
+
+                    <linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="197.2149" y1="605.9482" x2="462"
+                        y2="605.9482" gradientTransform="matrix(-0.8207 0.5714 -0.5714 -0.8207 537.3349 414.4665)">
+                        <stop offset="0" style="stop-color:#E8C36F" />
+                        <stop offset="0.2398" style="stop-color:#BB842C" />
+                        <stop offset="0.5153" style="stop-color:#7E5824" />
+                        <stop offset="0.8571" style="stop-color:#E8C36F" />
+                    </linearGradient>
+                    <polygon class="stdl2" points="43.7,67.8 44.6,67.8 12.6,6 12.5,5.9 0,1.6 0,2.4 12,6.5         " />
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div class="shapes down left">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 81.7 40.2" style="enable-background:new 0 0 81.7 40.2;" xml:space="preserve">
+            <style type="text/css">
+                .stdl3 {
+                    fill: url(#SVGID_8_);
+                }
+            </style>
+            <g class="st0">
+                <g>
+                    <linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="295.9823" y1="117.1416" x2="563.9457"
+                        y2="117.1416" gradientTransform="matrix(0.2721 -0.9623 0.9623 0.2721 -220.6461 513.1578)">
+                        <stop offset="0" style="stop-color:#E8C36F" />
+                        <stop offset="0.2398" style="stop-color:#BB842C" />
+                        <stop offset="0.5153" style="stop-color:#7E5824" />
+                        <stop offset="0.8571" style="stop-color:#E8C36F" />
+                    </linearGradient>
+                    <polygon class="stdl3" points="79.5,40.3 80.6,40.3 39.6,0.8 39.5,0.6 0,1.2 0,2 39.2,1.4         " />
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div class="shapes up left">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 14.3 84.8" style="enable-background:new 0 0 14.3 84.8;" xml:space="preserve">
+            <style type="text/css">
+                .stul1 {
+                    fill: url(#SVGID_9_);
+                }
+            </style>
+            <g class="st0">
+                <g>
+                    <linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="275.5249" y1="63.7573" x2="537.7723"
+                        y2="63.7573" gradientTransform="matrix(0.6 -0.8 0.8 0.6 -339.4523 389.163)">
+                        <stop offset="0" style="stop-color:#E8C36F" />
+                        <stop offset="0.2398" style="stop-color:#BB842C" />
+                        <stop offset="0.5153" style="stop-color:#7E5824" />
+                        <stop offset="0.8571" style="stop-color:#E8C36F" />
+                    </linearGradient>
+                    <polygon class="stul1" points="-0.2,1.7 -0.2,5.6 11.9,67 -0.2,82.2 -0.2,83.4 12.6,67.3 12.7,67.2         " />
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div class="ctrl next"></div>
+    <section class="main_slider">
+        <div class="slider">
+            <div class="slide">
+                <div class="inner_slide">
+                    <div class="card first">
+                        <img src="images/nav/vencanja_2.jpg" style="width: 100%;" />
+                    </div>
+                    <div class="card middle" data-page="page_one">
+                        <img class="back" src="images/nav/IMG_6816.jpg" style="width: 100%;" />
+                    </div>
+                    <div class="card last">
+                        <img src="images/nav/vencanja_3.jpg" style="width: 100%;" />
+                    </div>
+                </div>
+                <h3 class="back">VENČANJA</h3>
+                <p class="fancy back">Part of Your Life</p>
+                <img class="darrow" src="images/down-arrow.svg" alt="" />
+            </div>
+            <div class="slide two">
+                <div class="inner_slide">
+                    <div class="card first">
+                        <img src="images/nav/dizajn_1.jpg" style="width: 100%;" />
+                    </div>
+                    <div class="card middle" data-page="page_two">
+                        <img class="back" src="images/nav/design.jpg" style="width: 100%;" />
+                    </div>
+                    <div class="card last">
+                        <img src="images/nav/dizajn_2.jpg" style="width: 100%;" />
+                    </div>
+                </div>
+                <h3 class="back">DIZAJN</h3>
+                <p class="fancy back">Part of Your Life</p>
+                <img class="darrow" src="images/down-arrow.svg" alt="" />
+            </div>
+            <div class="slide">
+                <div class="inner_slide">
+                    <div class="card first">
+                        <img src="images/nav/kids_1.jpg" style="width: 100%;" />
+                    </div>
+                    <div class="card middle" data-page="page_three">
+                        <img class="back" src="images/nav/kids_2.jpg" style="width: 100%;" />
+                    </div>
+                    <div class="card last">
+                        <img src="images/nav/kids.jpg" style="width: 100%;" />
+                    </div>
+                </div>
+                <h3 class="back">DEČIJE PROSLAVE</h3>
+                <p class="fancy back">Part of Your Life</p>
+                <img class="darrow" src="images/down-arrow.svg" alt="" />
+            </div>
+            <div class="slide">
+                <div class="inner_slide">
+                    <div class="card first">
+                        <img src="images/nav/biznis_1.jpg" style="width: 100%;" />
+                    </div>
+                    <div class="card middle" data-page="page_four">
+                        <img class="back" src="images/nav/biznis_2.jpg" style="width: 100%;" />
+                    </div>
+                    <div class="card last">
+                        <img src="images/nav/biznis.jpg" style="width: 100%;" />
+                    </div>
+                </div>
+                <h3 class="back">POSLOVNI DOGAĐAJI</h3>
+                <p class="fancy back">Part of Your Life</p>
+                <img class="darrow" src="images/down-arrow.svg" alt="" />
+            </div>
+        </div>
+    </section>
+    <div class="bar_title">
+        <div class="progress_bar">
+            <div class="bar"></div>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 144.4 36.4" style="enable-background:new 0 0 144.4 36.4;" xml:space="preserve">
+                    <g>
+                        <path class="" d="M8,19.1c-1.8,6.2-3.5,12.5-4.9,17.3c-1.5,0-3.1-0.9-3.1-2.3c0-0.7,0.4-1.7,0.6-2.5c3.8-11.8,6.5-20,11.1-30.5
+                            C8.3,1.9,6,3.7,5.5,3.7c-0.4,0-1.4-0.8-1.4-1.2C6.4,1.5,10.3,0,14,0c5.3,0,11.6,2.9,11.6,8.7c0,9.4-14.3,10.4-17.2,10.4H8z
+                             M14.5,0.9c-2.2,4.4-4.3,10.8-6.3,17.5c6.6-0.4,14.5-3.6,14.5-10.5C22.6,3.1,18.7,1,14.5,0.9" />
+                        <path class="" d="M25.5,24.4c-0.4,1.6-0.6,3.2-0.6,4.6c0,2.3,0.7,3.5,2,3.5c2.4,0,4.9-3.7,6.5-7.2l0.7,0.4
+                            c-2.4,5.1-5.2,8.3-8.5,8.3c-2.6,0-3.6-2-3.6-4.7c0-8.7,11-29.2,14-29.2c0.9,0,1.5,2.1,1.5,3.3C37.5,7.4,32.1,18.9,25.5,24.4
+                             M25.9,22.8c5.2-5.3,10.2-15.4,10.2-18.5c0-0.6-0.2-0.7-0.3-0.7C34.5,3.7,28.4,14.1,25.9,22.8" />
+                        <path class="" d="M47.1,21.4c0,0.5-3,6.2-3,9.3c0,1.1,0.4,1.8,1.5,1.8c1.9,0,5.3-2.7,7.5-7.3l0.6,0.4c-1.9,4.9-5.9,8.3-9.1,8.3
+                            c-2.4,0-3.2-1.5-3.2-3.3c0-0.7,0.1-1.5,0.3-2.3c-1.7,3-3.7,5.6-5.9,5.6c-2,0-3.4-2.1-3.4-4.6c0-3.4,2.6-10.3,4-10.3
+                            c0.3,0,1.2,0.4,1.7,0.9c-1,1.5-3,6.1-3,9.1c0,0.8,0.1,3,1.6,3c2.8,0,6.5-8.4,8.2-11.8C45.5,20.4,47.1,20.7,47.1,21.4" />
+                        <path class="" d="M61.7,32.6c0-0.8,2.8-7.2,2.8-10.4c0-1-0.3-1.7-1.1-1.7c-2.6,0-8,7.1-10.3,13.2c-0.9,0-2.4-0.5-2.4-0.9
+                            c0-0.7,3.1-8.1,3.1-12.1c0.4-0.4,1.2-0.9,2.1-0.9c0.8,0,1.2,0.5,1.2,1.2c0,0.8-0.5,2.9-1.2,5.1c2.4-3.8,6.3-8.6,9.5-8.6
+                            c1.9,0,2.4,1.6,2.4,3.4c0,2.3-0.9,5.1-1.4,6.4c1.9-3.4,4.4-7,7.5-7c1.9,0,2.6,1.4,2.6,2.9c0,2.4-1.7,5.6-1.7,7.5
+                            c0,0.8,0.3,1.5,1.4,1.5c2.5,0,4.7-4.1,6.1-7.1l0.5,0.6c-1.4,3.8-4.2,8.1-7.8,8.1c-2.1,0-3-1.5-3-3.3c0-2.2,1.4-4.7,1.4-6.4
+                            c0-1.2-0.6-1.6-1.3-1.6c-1.5,0-3.1,2.4-5.9,6.7c-0.9,1.4-1.6,3-2.2,4.2C63.3,33.5,61.7,33.2,61.7,32.6" />
+                        <path class="" d="M84,27.8c-0.1,0.6-0.2,1.2-0.2,1.6c0,1.9,0.8,3.8,3.6,3.8c3.8,0,7.9-3.7,10.1-8l0.5,0.4
+                            c-2.4,5.4-7.1,8.9-11.6,8.9c-3.7,0-5.5-2.3-5.5-5.2c0-5.4,6.1-13,11.5-13c1.4,0,2.8,0.5,2.8,2.8C95.2,23.6,89.1,27.3,84,27.8
+                             M84.2,26.9c3.2-1.1,9-4.3,9-8.2c0-0.7-0.2-1-0.9-1C89.4,17.7,85.4,22.6,84.2,26.9" />
+                        <path class="" d="M96.7,26.8c0.8-1.6,2.3-4.7,3.7-8.6c-0.3-0.3-0.5-0.6-0.5-1.1c0-1.8,1.4-3.1,1.9-3.1c0.6,0,0.6,0.8,0.6,1.1
+                            c0,0.3-0.5,1.5-0.5,1.7c0,1.7,4.6,2.4,4.6,6.3c0,2.8-2.3,5.7-2.3,7.6c0,1.1,0.6,1.4,1.4,1.4c2.8,0,6.5-4.1,7.7-6.7l0.6,0.5
+                            c-1.7,3.8-5.6,7.9-9.4,7.9c-2,0-3.3-1.2-3.3-2.9c0-2.7,2.5-6.1,2.5-8.4c0-1.9-1.4-2.6-2.5-3.4c-1.4,3.6-3.1,7-4,8.7L96.7,26.8z" />
+                        <path class="" d="M119.7,18.2c0,1.5-4.7,7-4.7,11.2c0,2.2,0.7,2.7,2.2,2.7c2,0,4.4-1.8,7-6.9l0.4,0.5c-1.8,5.2-5.4,8-8.9,8
+                            c-2.3,0-3.5-1.7-3.5-3.8c0-3.4,3.4-12.7,6.5-12.7C119.2,17.2,119.7,17.6,119.7,18.2 M119.2,11.5c0-1.3,1.9-2.3,3.3-2.3
+                            c0.9,0,1.5,0.4,1.5,1.4c0,1.1-1.5,2.4-2.9,2.4C120.1,13,119.2,12.6,119.2,11.5" />
+                        <path class="" d="M137.8,24.1c0,1-2.6,4.1-2.6,6.3c0,0.9,0.5,2,1.5,2c1.6,0,4.5-2.3,7.2-7.1l0.5,0.5c-1.9,4.9-5.7,8.2-8.9,8.2
+                            c-2.2,0-3.3-1.6-3.3-3.2c0-0.4,0-0.8,0.1-1.3c-2.6,3.5-4.6,5.2-6.8,5.2c-1.9,0-3.3-1.2-3.3-3.7c0-5.4,6.6-13.9,12.5-13.9
+                            c2.3,0,4.1,1.4,4.1,3.4c0,1.5-0.9,1.9-2.2,1.9c0.1-0.5,0.2-1.1,0.2-1.6c0-1.4-0.6-2.5-2.2-2.5c-4.2,0-9.3,8.4-9.3,12.8
+                            c0,1.2,0.4,1.8,1.2,1.8c2.8,0,7.3-6.6,9.5-9.8C136.5,23,137.8,23.4,137.8,24.1" />
+                    </g>
+            </svg>
+        </div>
+    </header>
+    <aside class="lang">
+        <h4><a href="" id="sr">SR</a> &#47; <a href="" id="en">EN</a></h4>
+    </aside>
+    <aside class="soc">
+        <a href="#" class="icon-15 instagram" title="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg>
+        </a>
+        <a href="#" title="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" /></svg>
+        </a>
+        <a href="#" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" /></svg>
+        </a>
+    </aside>
+
+    <section class="page" id="page_one">
+        <div class="page_header"></div>
+        <h1>Kompletna organizacija venčanja</h1>
+        <div class="blurb">            
+            <p style="text-align:justify">
+              U srcu Vračara nalazi se oaza odabranih modnih brendova i salon
+              venčanica. Naša vrata su otvorena svim damama koje su spremne da
+              naprave veliki korak ka čuvenom i najznačajnijem DA u svom životu.
+              Naše venčanice su za dame istančanog ukusa koje su u potrazi za
+              inspiracijom i spremne su da naglase svoju lepotu i smelo zakorače
+              u novi i lepši život. Plumeria tim je tu da njihov dan učini
+              veličanstvenim.
+            </p>
+        </div>
+
+        <div class="collage_slider_container">
+            <div class="ctrl collage_prev"><a href="#"></a></div>
+            <div class="ctrl collage_next"><a href="#"></a></div>
+            <div class="main_collage_slider">
+                <div class="collage_slider left">
+                    <div class="collage_slide first"><img src="images/Dekor/IMG_6824.jpg" /></div>
+                    <div class="collage_slide second"><img src="images/Dekor/IMG_6347.jpg" /></div>
+                    <div class="collage_slide second"><img src="images/Dekor/IMG_6466.jpg" /></div>
+                    <div class="collage_slide second"><img src="images/Dekor/IMG_6387.jpg" /></div>
+                </div>
+            </div>
+            <div class="main_collage_slider right">
+                <div class="collage_slider right">
+                    <div class="collage_slide first"><img src="images/Dekor/IMG_6709.jpg" /></div>
+                    <div class="collage_slide second"><img src="images/Dekor/IMG_6700.jpg" /></div>
+                    <div class="collage_slide second"><img src="images/Dekor/IMG_6701.jpg" /></div>
+                    <div class="collage_slide second"><img src="images/Dekor/IMG_6691.jpg" /></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blurb">
+            <p>
+                Kreativni tim će vam pomoći i pri izboru savršenih dekoracija do
+                najsitnijih detalja. Od malih proslava do velikih venčanja,
+                dobrom komunikacijom ćemo osmisliti i organizovati jedinstveni
+                događaj za pamćenje.
+            </p>
+            <div class="horizontal_divider"></div>
+        </div>
+
+        <div class="collage_slider_container vertical">
+            <h1 class="snovi">Izaberite venčanicu Vaših <span>SNOVA</span></h1>
+            <div class="v_main_collage_slider left">
+                <div class="v_collage_slider left">
+                    <div class="v_collage_slide first"><img src="images/Vencanice/IMG_6766.jpg" /></div>
+                    <div class="v_collage_slide second"><img src="images/Vencanice/IMG_6415.jpg" /></div>
+                    <div class="v_collage_slide third"><img src="images/Vencanice/IMG_6606.jpg" /></div>
+                </div>
+            </div>
+            <div class="pager">
+                <div class="ctrl v_collage_prev"><a href="#"></a></div>
+                <div class="numbers">01 / 03</div>
+                <div class="ctrl v_collage_next"><a href="#"></a></div>
+            </div>
+            <div class="v_main_collage_slider right">
+                <div class="v_collage_slider right">
+                    <div class="collage_slide first"><img src="images/Vencanice/IMG_6782.jpg" /></div>
+                    <div class="collage_slide second"><img src="images/Vencanice/IMG_6438.jpg" /></div>
+                    <div class="collage_slide second"><img src="images/Vencanice/IMG_6738.jpg" /></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ponuda">
+            <div class="content_ponuda">
+                <div class="title_ponuda">
+                    <h1>U našoj ponudi <br> možete naći <br> sve na jednom <br> mestu</h1>
+                    <div class="horizontal_divider"></div>
+                    <div class="line_image">
+                        <img src="images/Vencanice/IMG_6606.jpg" />
+                    </div>
+                    <div class="text_ponuda">
+                        <ul>
+                            <li>ORGANIZACIJA</li>
+                            <li>DEKORACIJA</li>
+                            <li>POZIVNICE</li>
+                            <li>BIDERMAJER</li>
+                            <li>TORTA</li>
+                            <li>ŠMINKA</li>
+                        </ul>
+                        <ul>
+                            <li>PROTOKOL</li>
+                            <li>MUZIKA</li>
+                            <li>KETERING</li>
+                            <li>PIĆE</li>
+                            <li>FOTO I VIDEO PRODUKCIJA</li>
+                            <li>PROSTOR</li>
+                        </ul>
+                    </div>
+                    <p>Transport, kako klijenata, tako i celokupne prateće opreme za događaj</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page" id="page_two">
+        <h1>Dizajn</h1>
+            <p>
+                U potrazi za dizajnerskim inovacijama, Plumeria je otišla korak
+                dalje – ideal lepote je oplemenila prepoznatljivim brendovima koji
+                prikazuju esenciju modernog beogradskog stila. Spoj urbanog i
+                glamuroznog će svim damama koje tragaju za inspiracijom omogućiti
+                da izgledaju jedinstveno i osećaju se udobno.
+                Kod nas možete pronaći i različite modne brendove Studio Nuria -
+                svečane haljine, Mialleto - savršene mantile od svile sa krznom, <!--"savršeni mantili" u savršene mantile (padezi matters)-->
+                Gulch Gulch porcelanski nakit sa zlatom, VT mašne za gospodu,
+                SHE S Fascinator - jedinstveni ukrasi za kosu i šeširići za dame,
+                Beba Lingerie – unikatni intimni veš za dame i Caruso – muška odela.
+            </p>
+    </section>
+
+    <section class="page" id="page_three">
+        <h1>Kids</h1>
+            <p>
+                Pored garderobe za svaki dan, posebno mesto u našoj ponudi zauzimaju
+                svečane haljine za devojčice modernog kroja, raznovrsnih boja i
+                veselih dezena. Naši modeli idealni su za rođendanske žurke, krštenja,
+                novogodišnje proslave, venčanja i druge vrste svečanosti, kada
+                želite da Vaša princeza zablista posebnim sjajem.
+                <br />
+                Plumeria kids organizuje proslave dečijih rođendana, animaciju i novogodišnje
+                predstave. Posebno smo ponosni na našu saradnju sa umetničkom
+                organizacijom Fortuna Rota koja se uspešno bavi obrazovanjem dece
+                i mladih u različitim umetničkim sferama.
+            </p>
+    </section>
+
+    <section class="page" id="page_four">
+        <h1>Korporativne proslave</h1>
+            <p>
+                Ukoliko proslavljate poslovni uspeh, promovišete novi proizvod,
+                dodeljujete priznanja ili jednostavno želite da se okupite na kraju
+                poslovne godine, a želite da istaknete kvalitet i ozbiljnost Vašeg
+                poslovanja, sa punim poverenjem prepustite organizaciju Vaše proslave
+                našem kreativnom Plumeria timu.
+                <br />
+                Ako ste ambiciozni i stremite isključivo ka najboljim idejama u
+                Vašem poslu, onda zaslužujete vrhunsku organizaciju svojih korporativnih
+                proslava. Plumeria tim omogućava upravo to – pouzdan tim organizatora
+                koji će Vašu kompaniju prikazati kao lidera u svojoj oblasti i
+                profesionalnog partnera u biznisu.
+                <br />
+                Uz potpunu posvećenost i iskustvo, Plumeria Vam nudi idejno rešenje
+                za sve Vaše proslave kojima ćete istaći svoje poslovne uspehe na
+                elegantan i efektan način. Naši eksperti će predložiti stilski
+                najbolje rešenje poštujući Vaše želje i ideje.
+                <br />
+                <br />U našoj ponudi izdvajamo:
+                <br />
+
+                  <ul>
+                    <li>Pronalaženje prostora</li>
+                    <li>Ketering i veliki izbor pića</li>
+                    <li>Dekoraciju prostora</li>
+                    <li>Brendiranje</li>
+                    <li>Poklone za goste</li>
+                    <li>Protokol za zvanice</li>
+                    <li>Foto-video produkciju</li>
+                  </ul>
+
+                <br />
+                Osigurajte svoje mesto u poslovnom vrhu – kontaktirajte nas još
+                danas i celokupnu organizaciju prepustite nama. Naše reference su
+                najbolja garancija da ste za organizaciju Vaše proslave napravili
+                idealan izbor.
+            </P>
+    </section>
+
+    <div class="fTab">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 114.1 117.1" style="enable-background:new 0 0 114.1 117.1;" xml:space="preserve">
+            <g>
+                <g>
+                    <path class="" d="M36,72.1c-13.1,0-24.6-6.8-31.3-17c6.8-8.1,17-13.2,28.4-13.2c0.4,0,0.9,0,1.3,0c-1.8-0.3-3.7-0.4-5.6-0.4
+                    c-10.1,0-19.2,4-25.9,10.5c-1.1,1-2,2.1-3,3.2c0.6,1.2,1.3,2.3,2,3.5c6.6,9.8,17.8,16.3,30.5,16.3c9.6,0,18.3-3.7,24.9-9.7
+                    C51.4,69.6,44,72.1,36,72.1" />
+                    <path class="" d="M39.8,59.2c-2.7,0-5.2-0.5-7.6-1.5c-0.8-0.4-1.7-0.8-2.4-1.2c0,0,0,0,0,0c-0.2-0.2-0.5-0.3-0.7-0.5
+                    c0,0,0,0,0,0c-0.2-0.1-0.5-0.2-0.8-0.3c-0.3-0.1-0.7-0.1-1-0.1c-2.2,0-4,1.8-4,4c0,2.2,1.8,4,4,4c0.4,0,0.7,0,1-0.1
+                    c0.3-0.1,0.6-0.2,0.8-0.3c0.2-0.1,0.4-0.3,0.6-0.4c0.8-0.5,1.7-0.9,2.5-1.3c2.3-1,4.9-1.5,7.6-1.5c4.5,0,8.7,1.6,12,4.2h0
+                    c2.1-1.1,3.9-2.7,5.4-4.5c-1.5-1.9-3.3-3.4-5.4-4.5C48.5,57.6,44.3,59.2,39.8,59.2" />
+                    <path class="" d="M42.1,39.5c-4-12.5-1.2-25.5,6.5-35c9.8,4,17.8,12.1,21.3,23c0.1,0.4,0.3,0.8,0.4,1.3
+                    c-0.3-1.8-0.7-3.7-1.3-5.5c-3.1-9.6-9.7-17-18-21.4c-1.3-0.7-2.6-1.3-4-1.8c-0.9,1-1.8,2-2.7,3c-7.3,9.3-10,22-6.1,34.1
+                    c3,9.1,9.2,16.3,17,20.7C49.2,53.3,44.6,47,42.1,39.5" />
+                    <path class="" d="M55.5,39c-0.8-2.6-1.1-5.1-0.9-7.7c0.1-0.9,0.2-1.8,0.4-2.7c0,0,0,0,0,0c0.1-0.3,0.2-0.5,0.2-0.8c0,0,0,0,0,0
+                    c0-0.3,0.1-0.5,0-0.8c0-0.3-0.1-0.7-0.2-1c-0.7-2.1-3-3.3-5.1-2.6c-2.1,0.7-3.3,3-2.6,5.1c0.1,0.3,0.3,0.7,0.4,0.9
+                    c0.2,0.3,0.4,0.5,0.6,0.7c0.2,0.1,0.4,0.3,0.5,0.4c0.7,0.6,1.4,1.3,2,2c1.7,1.9,3,4.2,3.8,6.7c1.4,4.3,1.2,8.8-0.3,12.7l0,0
+                    c1.7,1.7,3.7,2.9,6,3.7c1.3-2,2.2-4.2,2.6-6.5C59.7,46.8,56.9,43.3,55.5,39" />
+                    <path class="" d="M75,35.1c10.6-7.7,23.9-9,35.3-4.7c-0.8,10.5-6.1,20.7-15.3,27.4c-0.4,0.3-0.7,0.5-1.1,0.8
+                    c1.6-0.9,3.2-1.8,4.8-3c8.2-5.9,13.2-14.5,14.8-23.7c0.3-1.4,0.4-2.9,0.5-4.4c-1.2-0.6-2.4-1.1-3.7-1.6c-11.1-4.1-24-2.8-34.3,4.7
+                    c-7.8,5.6-12.7,13.8-14.4,22.5C64.1,46.2,68.6,39.8,75,35.1" />
+                    <path class="" d="M79.6,47.8c2.2-1.6,4.6-2.6,7-3.2c0.9-0.2,1.8-0.3,2.7-0.4c0,0,0,0,0,0c0.3,0,0.6,0,0.8-0.1c0,0,0,0,0,0
+                    c0.3,0,0.5-0.1,0.8-0.2c0.3-0.1,0.6-0.3,0.9-0.5c1.8-1.3,2.2-3.8,0.9-5.6c-1.3-1.8-3.8-2.2-5.6-0.9c-0.3,0.2-0.5,0.5-0.8,0.7
+                    c-0.2,0.2-0.4,0.5-0.5,0.8c-0.1,0.2-0.2,0.4-0.3,0.7c-0.4,0.9-0.8,1.7-1.3,2.6c-1.3,2.2-3,4.1-5.2,5.7c-3.7,2.7-8,3.8-12.2,3.7
+                    l0,0c-1.1,2.1-1.6,4.5-1.7,6.8c2.3,0.6,4.7,0.8,7,0.5C73.5,54.2,75.9,50.4,79.6,47.8" />
+                    <path class="" d="M89.3,65.1c10.6,7.7,16,19.9,15.3,32.1c-10.3,2.5-21.5,0.6-30.7-6.1c-0.4-0.3-0.7-0.5-1.1-0.8
+                    c1.3,1.3,2.8,2.5,4.3,3.6c8.2,5.9,17.9,8.1,27.2,6.8c1.4-0.2,2.9-0.5,4.3-0.9c0.2-1.3,0.3-2.7,0.4-4c0.5-11.8-4.8-23.7-15.1-31.1
+                    c-7.8-5.6-17-7.8-25.9-6.7C75.5,58.1,82.9,60.4,89.3,65.1" />
+                    <path class="" d="M78.7,73.4c2.2,1.6,3.9,3.5,5.2,5.7c0.5,0.8,0.9,1.6,1.2,2.4c0,0,0,0,0,0c0.1,0.3,0.2,0.5,0.3,0.8
+                    c0,0,0,0,0,0c0.1,0.2,0.3,0.5,0.4,0.7c0.2,0.3,0.5,0.5,0.8,0.7c1.8,1.3,4.3,0.9,5.6-0.9c1.3-1.8,0.9-4.3-0.9-5.6
+                    c-0.3-0.2-0.6-0.4-0.9-0.5c-0.3-0.1-0.6-0.2-0.9-0.2c-0.2,0-0.5,0-0.7,0c-0.9-0.1-1.9-0.2-2.8-0.4c-2.5-0.6-4.8-1.6-7-3.2
+                    c-3.7-2.7-6.1-6.4-7.2-10.5l0,0c-2.4-0.3-4.7-0.2-7,0.5c0.1,2.4,0.7,4.7,1.7,6.8C70.8,69.5,75.1,70.7,78.7,73.4" />
+                    <path class="" d="M65.2,88c-4,12.5-14,21.3-25.8,24.5c-5.5-9-7.2-20.3-3.7-31.1c0.1-0.4,0.3-0.8,0.4-1.3
+                    c-0.8,1.7-1.5,3.4-2.1,5.2c-3.1,9.6-2.1,19.5,2,27.9c0.6,1.3,1.4,2.6,2.2,3.8c1.3-0.2,2.6-0.5,3.9-0.9c11.4-3.2,21-11.9,25-24
+                    c3-9.1,2.2-18.6-1.6-26.7C67.6,72.6,67.7,80.4,65.2,88" />
+                    <path class="" d="M54.1,80.5c-0.8,2.6-2.1,4.8-3.8,6.7c-0.6,0.7-1.3,1.3-1.9,1.9c0,0,0,0,0,0c-0.2,0.2-0.5,0.3-0.7,0.5
+                    c0,0,0,0,0,0c-0.2,0.2-0.4,0.4-0.5,0.6c-0.2,0.3-0.3,0.6-0.4,0.9c-0.7,2.1,0.5,4.4,2.6,5.1c2.1,0.7,4.4-0.5,5.1-2.6
+                    c0.1-0.3,0.2-0.7,0.2-1c0-0.3,0-0.6-0.1-0.9c-0.1-0.2-0.1-0.4-0.2-0.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.2-2.5,0-5.1,0.9-7.7
+                    c1.4-4.3,4.2-7.8,7.7-10.1l0,0C62,68.2,61.1,66,59.8,64c-2.2,0.8-4.3,2.1-6,3.7C55.3,71.7,55.5,76.1,54.1,80.5" />
+                </g>
+            </g>
+        </svg>
+    </div>
+    <footer>
+        <div class="container">
+            <p class="first">
+                Brza svakodnevnica, obaveze i moderno doba, nas često ometaju u
+                želji da brzo i efikasno realizujemo svoje ideje, zato je tu za
+                Vas tim kreativnih ljudi da vam olakša pripreme i vaš poseban dan
+                učine nezaboravnim. Mogućnost ispunjavanja više želja i potreba <!--učinili u učine-->
+                na jednom mestu, našim klijentima daje osećaj sigurnosti, slobode
+                i poverenja.
+            </p>
+            <p>
+                Plumeria prožima različite sfere, od mode, grafičkog dizajna, izrade
+                predmeta unikatnog dizajna do same organizacije svečanih i korporativnih
+                događaja, dečijih rođendana, team building aktivnosti, u Srbiji i
+                inostranstvu. Našu ponudu delimo na nekoliko kategorija:
+            </p>
+            <div class="footer_info">
+                <div class="row_3 icon">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 144.4 148.5" style="enable-background:new 0 0 144.4 148.5;"
+                        xml:space="preserve">
+                        <g>
+                            <g>
+                                <path class="" d="M50.7,72.1c-13.1,0-24.6-6.8-31.3-17c6.8-8.1,17-13.2,28.4-13.2c0.4,0,0.9,0,1.3,0c-1.8-0.3-3.7-0.4-5.6-0.4
+                                c-10.1,0-19.2,4-25.9,10.5c-1.1,1-2,2.1-3,3.2c0.6,1.2,1.3,2.3,2,3.5c6.6,9.8,17.8,16.3,30.5,16.3c9.6,0,18.3-3.7,24.9-9.7
+                                C66,69.6,58.6,72.1,50.7,72.1" />
+                                <path class="" d="M54.4,59.2c-2.7,0-5.2-0.5-7.6-1.5c-0.8-0.4-1.7-0.8-2.4-1.2c0,0,0,0,0,0c-0.2-0.2-0.5-0.3-0.7-0.5
+                                c0,0,0,0,0,0c-0.2-0.1-0.5-0.2-0.8-0.3c-0.3-0.1-0.7-0.1-1-0.1c-2.2,0-4,1.8-4,4c0,2.2,1.8,4,4,4c0.4,0,0.7,0,1-0.1
+                                c0.3-0.1,0.6-0.2,0.8-0.3c0.2-0.1,0.4-0.3,0.6-0.4c0.8-0.5,1.7-0.9,2.5-1.3c2.3-1,4.9-1.5,7.6-1.5c4.5,0,8.7,1.6,12,4.2h0
+                                c2.1-1.1,3.9-2.7,5.4-4.5c-1.5-1.9-3.3-3.4-5.4-4.5C63.1,57.6,59,59.2,54.4,59.2" />
+                                <path class="" d="M56.7,39.5c-4-12.5-1.2-25.5,6.5-35c9.8,4,17.8,12.1,21.3,23c0.1,0.4,0.3,0.8,0.4,1.3
+                                c-0.3-1.8-0.7-3.7-1.3-5.5c-3.1-9.6-9.7-17-18-21.4c-1.3-0.7-2.6-1.3-4-1.8c-0.9,1-1.8,2-2.7,3c-7.3,9.3-10,22-6.1,34.1
+                                c3,9.1,9.2,16.3,17,20.7C63.8,53.3,59.2,47,56.7,39.5" />
+                                <path class="" d="M70.2,39c-0.8-2.6-1.1-5.1-0.9-7.7c0.1-0.9,0.2-1.8,0.4-2.7c0,0,0,0,0,0c0.1-0.3,0.2-0.5,0.2-0.8c0,0,0,0,0,0
+                                c0-0.3,0.1-0.5,0-0.8c0-0.3-0.1-0.7-0.2-1c-0.7-2.1-3-3.3-5.1-2.6c-2.1,0.7-3.3,3-2.6,5.1c0.1,0.3,0.3,0.7,0.4,0.9
+                                c0.2,0.3,0.4,0.5,0.6,0.7c0.2,0.1,0.4,0.3,0.5,0.4c0.7,0.6,1.4,1.3,2,2c1.7,1.9,3,4.2,3.8,6.7c1.4,4.3,1.2,8.8-0.3,12.7l0,0
+                                c1.7,1.7,3.7,2.9,6,3.7c1.3-2,2.2-4.2,2.6-6.5C74.4,46.8,71.6,43.3,70.2,39" />
+                                <path class="" d="M89.7,35.1c10.6-7.7,23.9-9,35.3-4.7c-0.8,10.5-6.1,20.7-15.3,27.4c-0.4,0.3-0.7,0.5-1.1,0.8
+                                c1.6-0.9,3.2-1.8,4.8-3c8.2-5.9,13.2-14.5,14.8-23.7c0.3-1.4,0.4-2.9,0.5-4.4c-1.2-0.6-2.4-1.1-3.7-1.6c-11.1-4.1-24-2.8-34.3,4.7
+                                C83,36.3,78.1,44.4,76.3,53.2C78.7,46.2,83.2,39.8,89.7,35.1" />
+                                <path class="" d="M94.3,47.8c2.2-1.6,4.6-2.6,7-3.2c0.9-0.2,1.8-0.3,2.7-0.4c0,0,0,0,0,0c0.3,0,0.6,0,0.8-0.1c0,0,0,0,0,0
+                                c0.3,0,0.5-0.1,0.8-0.2c0.3-0.1,0.6-0.3,0.9-0.5c1.8-1.3,2.2-3.8,0.9-5.6c-1.3-1.8-3.8-2.2-5.6-0.9c-0.3,0.2-0.5,0.5-0.8,0.7
+                                c-0.2,0.2-0.4,0.5-0.5,0.8c-0.1,0.2-0.2,0.4-0.3,0.7c-0.4,0.9-0.8,1.7-1.3,2.6c-1.3,2.2-3,4.1-5.2,5.7c-3.7,2.7-8,3.8-12.2,3.7
+                                l0,0c-1.1,2.1-1.6,4.5-1.7,6.8c2.3,0.6,4.7,0.8,7,0.5C88.1,54.2,90.6,50.4,94.3,47.8" />
+                                <path class="" d="M104,65.1c10.6,7.7,16,19.9,15.3,32.1c-10.3,2.5-21.5,0.6-30.7-6.1c-0.4-0.3-0.7-0.5-1.1-0.8
+                                c1.3,1.3,2.8,2.5,4.3,3.6c8.2,5.9,17.9,8.1,27.2,6.8c1.4-0.2,2.9-0.5,4.3-0.9c0.2-1.3,0.3-2.7,0.4-4c0.5-11.8-4.8-23.7-15.1-31.1
+                                c-7.8-5.6-17-7.8-25.9-6.7C90.1,58.1,97.5,60.4,104,65.1" />
+                                <path class="" d="M93.4,73.4c2.2,1.6,3.9,3.5,5.2,5.7c0.5,0.8,0.9,1.6,1.2,2.4c0,0,0,0,0,0c0.1,0.3,0.2,0.5,0.3,0.8
+                                c0,0,0,0,0,0c0.1,0.2,0.3,0.5,0.4,0.7c0.2,0.3,0.5,0.5,0.8,0.7c1.8,1.3,4.3,0.9,5.6-0.9c1.3-1.8,0.9-4.3-0.9-5.6
+                                c-0.3-0.2-0.6-0.4-0.9-0.5c-0.3-0.1-0.6-0.2-0.9-0.2c-0.2,0-0.5,0-0.7,0c-0.9-0.1-1.9-0.2-2.8-0.4c-2.5-0.6-4.8-1.6-7-3.2
+                                c-3.7-2.7-6.1-6.4-7.2-10.5l0,0c-2.4-0.3-4.7-0.2-7,0.5c0.1,2.4,0.7,4.7,1.7,6.8C85.4,69.5,89.7,70.7,93.4,73.4" />
+                                <path class="" d="M79.9,88c-4,12.5-14,21.3-25.8,24.5c-5.5-9-7.2-20.3-3.7-31.1c0.1-0.4,0.3-0.8,0.4-1.3
+                                c-0.8,1.7-1.5,3.4-2.1,5.2c-3.1,9.6-2.1,19.5,2,27.9c0.6,1.3,1.4,2.6,2.2,3.8c1.3-0.2,2.6-0.5,3.9-0.9c11.4-3.2,21-11.9,25-24
+                                c3-9.1,2.2-18.6-1.6-26.7C82.2,72.6,82.3,80.4,79.9,88" />
+                                <path class="" d="M68.7,80.5c-0.8,2.6-2.1,4.8-3.8,6.7c-0.6,0.7-1.3,1.3-1.9,1.9c0,0,0,0,0,0c-0.2,0.2-0.5,0.3-0.7,0.5
+                                c0,0,0,0,0,0c-0.2,0.2-0.4,0.4-0.5,0.6c-0.2,0.3-0.3,0.6-0.4,0.9c-0.7,2.1,0.5,4.4,2.6,5.1c2.1,0.7,4.4-0.5,5.1-2.6
+                                c0.1-0.3,0.2-0.7,0.2-1c0-0.3,0-0.6-0.1-0.9c-0.1-0.2-0.1-0.4-0.2-0.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.2-2.5,0-5.1,0.9-7.7
+                                c1.4-4.3,4.2-7.8,7.7-10.1l0,0c-0.4-2.3-1.3-4.6-2.6-6.5c-2.2,0.8-4.3,2.1-6,3.7C69.9,71.7,70.1,76.1,68.7,80.5" />
+                            </g>
+                            <g>
+                                <path class="" d="M8,131.2c-1.8,6.2-3.5,12.5-4.9,17.3c-1.5,0-3.1-0.9-3.1-2.3c0-0.7,0.4-1.7,0.6-2.5
+                                c3.8-11.8,6.5-20,11.1-30.5c-3.5,0.7-5.8,2.5-6.3,2.5c-0.4,0-1.4-0.8-1.4-1.2c2.3-1,6.2-2.5,10-2.5c5.3,0,11.6,2.9,11.6,8.7
+                                c0,9.4-14.3,10.4-17.2,10.4H8z M14.5,113c-2.2,4.4-4.3,10.8-6.3,17.5c6.6-0.4,14.5-3.6,14.5-10.5C22.6,115.1,18.7,113,14.5,113" />
+                                <path class="" d="M25.5,136.4c-0.4,1.6-0.6,3.2-0.6,4.6c0,2.3,0.7,3.5,2,3.5c2.4,0,4.9-3.7,6.5-7.2l0.7,0.4
+                                c-2.4,5.1-5.2,8.3-8.5,8.3c-2.6,0-3.6-2-3.6-4.7c0-8.7,11-29.2,14-29.2c0.9,0,1.5,2.1,1.5,3.3C37.5,119.4,32.1,131,25.5,136.4
+                                 M25.9,134.9c5.2-5.3,10.2-15.4,10.2-18.5c0-0.6-0.2-0.7-0.3-0.7C34.5,115.7,28.4,126.2,25.9,134.9" />
+                                <path class="" d="M47.1,133.5c0,0.5-3,6.2-3,9.3c0,1.1,0.4,1.8,1.5,1.8c1.9,0,5.3-2.7,7.5-7.3l0.6,0.4
+                                c-1.9,4.9-5.9,8.3-9.1,8.3c-2.4,0-3.2-1.5-3.2-3.3c0-0.7,0.1-1.5,0.3-2.3c-1.7,3-3.7,5.6-5.9,5.6c-2,0-3.4-2.1-3.4-4.6
+                                c0-3.4,2.6-10.3,4-10.3c0.3,0,1.2,0.4,1.7,0.9c-1,1.5-3,6.1-3,9.1c0,0.8,0.1,3,1.6,3c2.8,0,6.5-8.4,8.2-11.8
+                                C45.5,132.4,47.1,132.7,47.1,133.5" />
+                                <path class="" d="M61.7,144.7c0-0.8,2.8-7.2,2.8-10.4c0-1-0.3-1.7-1.1-1.7c-2.6,0-8,7.1-10.3,13.2c-0.9,0-2.4-0.5-2.4-0.9
+                                c0-0.7,3.1-8.1,3.1-12.1c0.4-0.4,1.2-0.9,2.1-0.9c0.8,0,1.2,0.5,1.2,1.2c0,0.8-0.5,2.9-1.2,5.1c2.4-3.8,6.3-8.6,9.5-8.6
+                                c1.9,0,2.4,1.6,2.4,3.4c0,2.3-0.9,5.1-1.4,6.4c1.9-3.4,4.4-7,7.5-7c1.9,0,2.6,1.4,2.6,2.9c0,2.4-1.7,5.6-1.7,7.5
+                                c0,0.8,0.3,1.5,1.4,1.5c2.5,0,4.7-4.1,6.1-7.1l0.5,0.6c-1.4,3.8-4.2,8.1-7.8,8.1c-2.1,0-3-1.5-3-3.3c0-2.2,1.4-4.7,1.4-6.4
+                                c0-1.2-0.6-1.6-1.3-1.6c-1.5,0-3.1,2.4-5.9,6.7c-0.9,1.4-1.6,3-2.2,4.2C63.3,145.6,61.7,145.3,61.7,144.7" />
+                                <path class="" d="M84,139.8c-0.1,0.6-0.2,1.2-0.2,1.6c0,1.9,0.8,3.8,3.6,3.8c3.8,0,7.9-3.7,10.1-8l0.5,0.4
+                                c-2.4,5.4-7.1,8.9-11.6,8.9c-3.7,0-5.5-2.3-5.5-5.2c0-5.4,6.1-13,11.5-13c1.4,0,2.8,0.5,2.8,2.8C95.2,135.7,89.1,139.3,84,139.8
+                                 M84.2,139c3.2-1.1,9-4.3,9-8.2c0-0.7-0.2-1-0.9-1C89.4,129.7,85.4,134.7,84.2,139" />
+                                <path class="" d="M96.7,138.8c0.8-1.6,2.3-4.7,3.7-8.6c-0.3-0.3-0.5-0.6-0.5-1.1c0-1.8,1.4-3.1,1.9-3.1c0.6,0,0.6,0.8,0.6,1.1
+                                c0,0.3-0.5,1.5-0.5,1.7c0,1.7,4.6,2.4,4.6,6.3c0,2.8-2.3,5.7-2.3,7.6c0,1.1,0.6,1.4,1.4,1.4c2.8,0,6.5-4.1,7.7-6.7l0.6,0.5
+                                c-1.7,3.8-5.6,7.9-9.4,7.9c-2,0-3.3-1.2-3.3-2.9c0-2.7,2.5-6.1,2.5-8.4c0-1.9-1.4-2.6-2.5-3.4c-1.4,3.6-3.1,7-4,8.7L96.7,138.8z" />
+                                <path class="" d="M119.7,130.2c0,1.5-4.7,7-4.7,11.2c0,2.2,0.7,2.7,2.2,2.7c2,0,4.4-1.8,7-6.9l0.4,0.5c-1.8,5.2-5.4,8-8.9,8
+                                c-2.3,0-3.5-1.7-3.5-3.8c0-3.4,3.4-12.7,6.5-12.7C119.2,129.3,119.7,129.6,119.7,130.2 M119.2,123.6c0-1.3,1.9-2.3,3.3-2.3
+                                c0.9,0,1.5,0.4,1.5,1.4c0,1.1-1.5,2.4-2.9,2.4C120.1,125.1,119.2,124.6,119.2,123.6" />
+                                <path class="" d="M137.8,136.1c0,1-2.6,4.1-2.6,6.3c0,0.9,0.5,2,1.5,2c1.6,0,4.5-2.3,7.2-7.1l0.5,0.5c-1.9,4.9-5.7,8.2-8.9,8.2
+                                c-2.2,0-3.3-1.6-3.3-3.2c0-0.4,0-0.8,0.1-1.3c-2.6,3.5-4.6,5.2-6.8,5.2c-1.9,0-3.3-1.2-3.3-3.7c0-5.4,6.6-13.9,12.5-13.9
+                                c2.3,0,4.1,1.4,4.1,3.4c0,1.5-0.9,1.9-2.2,1.9c0.1-0.5,0.2-1.1,0.2-1.6c0-1.4-0.6-2.5-2.2-2.5c-4.2,0-9.3,8.4-9.3,12.8
+                                c0,1.2,0.4,1.8,1.2,1.8c2.8,0,7.3-6.6,9.5-9.8C136.5,135.1,137.8,135.4,137.8,136.1" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="row_3">
+                    <h4><a class="nav" data-page="page_one" href="">VENČANJA</a></h4>
+                    <h4><a class="nav" data-page="page_two" href="">DIZAJN</a></h4>
+                    <h4><a class="nav" data-page="page_three" href="">DEČIJI DOGAĐAJI</a></h4>
+                    <h4><a class="nav" data-page="page_four" href="">POSLOVNI DOGAĐAJI</a></h4>
+                </div>
+                <div class="row_3">
+                    <h4>KONTAKT</h4>
+                    <p class="kontakt_info">
+                        Šumatovačka 32 Belgrade, Serbia<br>
+                        office@plumeriaconcept.com<br>
+                        +381 69 5521637
+                    </p>
+                    <h4 class="lang"><a href="" id="sr">SR</a> &#47; <a href="" id="en">EN</a></h4>
+                </div>
+            </div>
+            <div class="footers_footer">
+                <p>2018 Copyright. All Rights Reserved. Designed by Firefly Studio</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fTab pTab">
+        <img src="images/handshake-solid.svg" />
+    </div>
+    <footer>
+        <div class="container pCon">
+            <div class="footer_info">
+                <div class="row_3">
+                    PARTNERI
+                </div>
+            </div>
+            <div class="footers_footer">
+                <p>2018 Copyright. All Rights Reserved. Designed by Firefly Studio</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
