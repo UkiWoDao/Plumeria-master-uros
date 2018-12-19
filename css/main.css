@@ -1,9 +1,10 @@
 /* FIXME:
-- card.middle se nekad izduzuje pri resize-u vjuporta, a nekad h3 ispod
-slajdera biva preklopljen od strane necega;
-- kod main_slider desna slika odlazi dole kad suzis vjuport po sirini;
-- main_slider se ne vidi kada se uradi refresh pri smanjenom vjuportu;
-- u poslovnim dogadjajima, slab kontrast izmedju h3.back i pozadine;
+  - card.middle se nekad izduzuje pri resize-u vjuporta, a nekad h3 ispod
+  slajdera biva preklopljen od strane necega;
+  - kod main_slider desna slika odlazi dole kad suzis vjuport po sirini;
+  - main_slider se ne vidi kada se uradi refresh pri smanjenom vjuportu;
+  - u poslovnim dogadjajima, slab kontrast izmedju h3.back i pozadine;
+  - pri smanjenju vjuporta, u trenutni card middle ulazi sledeci sa desne strane;
 */
 
 
@@ -58,13 +59,16 @@ header {
     max-width: 10rem;
     max-height: 60px;
     margin: 0 2rem;
+        background-color: #f3f3f4; /* FIXME: vidi da li ti odgovara ovakav stil */
+        padding: 15px 20px;
+        opacity: 0.95;
 }
 
 /* ASIDE LANGUAGE */
 aside.lang {
     position: absolute;
     top: 0;
-    left: 3vw;
+        left: 2vw; /* FIXME: izjednacio sa aside.soc right */
     height: 94vh;
     -webkit-writing-mode: tb-rl;
     -ms-writing-mode: tb-rl;
@@ -146,37 +150,40 @@ aside.soc a:hover {
 
 /* PAGE FOUR */
 
-.page_header_four {
-    width: 100%;
-    height: 60vh;
-    margin: 5% 0 5%;
-    background: left center/100% no-repeat url(../images/biznis/plumeria-carbon8.jpg);
-}
+    .page_header_four {
+        width: 100%;
+        height: 60vh;
+        margin: 5% 0 5%;
+        background: left center/100% no-repeat url(../images/biznis/plumeria-carbon8.jpg);
+    }
 
-.image-container {
-    position: relative;
-    min-height: 120vh;
-    overflow: hidden;
-}
+    .image-container {
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+    }
 
-.left-image {
-    width: 50%;
-    position: relative;
-    top: 0;
-    left: 5%;
-}
+    .left-image {
+        width: 47%;
+        position: relative;
+        top: 70px;
+        left: 5%;
+        /*box-shadow: 0 0 8px black;*/
+    }
 
-.right-image {
-    width: 50%;
-    position: absolute;
-    top: 40%;
-    left: 45%;
-}
+    .right-image {
+        width: 47%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        /*box-shadow: 0 0 8px black;*/
+    }
 
-.middle-image {
-    width: 80vw;
-    padding: 5% 10%;
-}
+    .middle-image {
+        width: 80vw;
+        padding: 5% 10%;
+    }
+
 
 /* ******************************SLIDER************************************* */
 .main_slider {
@@ -245,9 +252,7 @@ img.darrow {
     position: relative;
 
     -webkit-transition: all .8s ease-out;
-
     -o-transition: all .8s ease-out;
-
     transition: all .8s ease-out;
 }
 
@@ -262,9 +267,7 @@ img.darrow {
     background-color: #E28D8E;
 
     -webkit-transition: all .8s ease-out;
-
     -o-transition: all .8s ease-out;
-
     transition: all .8s ease-out;
 }
 
@@ -299,9 +302,7 @@ img.darrow {
     z-index: 0;
 
     -webkit-transition: all .8s ease-out;
-
     -o-transition: all .8s ease-out;
-
     transition: all .8s ease-out;
 }
 
@@ -666,7 +667,7 @@ body.page_style .page.page_style {
     position: relative;
     width: 86vw;
     height: 80vh;
-    margin: 5em auto 5rem; /* FIXME: stavio sam gornju marginu 5em da dise malo paragraf iznad*/
+        margin: 5em auto 5rem; /* FIXME: promenio sam gornju marginu sa 0 u 5em da dise malo paragraf iznad*/
 }
 
 .main_collage_slider,
@@ -810,78 +811,75 @@ span {
 
 
 /* FIXME: napravio blurbove sa razlicitim text-align-om. ceo sledeci blok je moj do sledeceg FIXME */
-.blurb_justify {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    .blurb_justify {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
 
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 
-.blurb_justify p {
-    padding: 3rem 7vw;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-    color: #999999;
-    text-align: justify;
-}
+    .blurb_justify p {
+        padding: 3rem 7vw;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        color: #999999;
+        text-align: justify;
+    }
 
-.blurb_right {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    .blurb_right {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
 
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 
-.blurb_right p {
-    padding: 3rem 7vw;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-    color: #999999;
-    text-align: right;
-}
+    .blurb_right p {
+        padding: 3rem 7vw;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        color: #999999;
+        text-align: right;
+    }
 
-.blurb_left {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    .blurb_left {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
 
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 
-.blurb_left p {
-    padding: 3rem 7vw;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-    color: #999999;
-    text-align: left;
-}
+    .blurb_left p {
+        padding: 3rem 7vw;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        color: #999999;
+        text-align: left;
+    }
 
-.horizontal_divider_double {
-    width: 50%;
-    height: 3px;
-    background-color: #E28D8E;
-}
+    .horizontal_divider_double {
+        width: 50%;
+        height: 3px;
+        background-color: #E28D8E;
+    }
 
-.list_ponuda {
-  padding: 3rem 7vw;
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-  color: #999999;
-}
-/* FIXME: DO OVDE MOJE */
-
-
+    .list_ponuda {
+      padding: 3rem 7vw;
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      color: #999999;
+    }
 
 .horizontal_divider {
     width: 132%;
