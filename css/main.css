@@ -5,7 +5,6 @@
   - main_slider se ne vidi kada se uradi refresh pri smanjenom vjuportu;
   - u poslovnim dogadjajima, slab kontrast izmedju h3.back i pozadine;
   - pri smanjenju vjuporta, u trenutni card middle ulazi sledeci sa desne strane;
-  - sr/en nije fiksirano na svim sekcijama;
 */
 
 
@@ -144,27 +143,37 @@ aside.soc a:hover {
     transform: scale(1.1);
 }
 
+    .vencanja {
+        background: right bottom/110% no-repeat url(../images/Vencanice/desent.jpg);
+    }
+
+
 /* PAGE TWO */
+
+    .dizajn {
+        background: left center/100% no-repeat url(../images/dizajn/dsc03982.jpg);
+    }
+
 
 /* PAGE THREE */
 
+    .deca {
+        background: url();
+    }
 
 /* PAGE FOUR */
 
-    .page_header_four {
-        width: 100%;
-        height: 60vh;
-        margin: 5% 0 5%;
+    .biznis {
         background: left center/100% no-repeat url(../images/biznis/plumeria-carbon8.jpg);
     }
 
-    .image-container {
+    .image_container {
         position: relative;
-        min-height: 88vh;
+        min-height: 90vh;
         overflow: hidden;
     }
 
-    .biznis_main_image_left {
+    .section_main_image_left {
         width: 46%;
         position: relative;
         top: 70px;
@@ -172,7 +181,7 @@ aside.soc a:hover {
         /*box-shadow: 0 0 8px black;*/
     }
 
-    .biznis_main_image_right {
+    .section_main_image_right {
         width: 46%;
         position: absolute;
         top: 30%;
@@ -184,7 +193,6 @@ aside.soc a:hover {
         width: 80vw;
         padding: 5% 10%;
     }
-
 
     .list_ponuda {
         padding: 3rem 7vw;
@@ -695,11 +703,10 @@ body.page_style .page.page_style {
     visibility: visible;
 }
 
-.page_header { /* IDEA: mozda staviti u background: right top, a bilo bi sigurno dobro da kropujemo sliku da se vise vidi lice manekenke */
+.page_header {
     width: 100%;
     height: 60vh;
     margin: 5% 0 10%;
-    background: right bottom/110% no-repeat url(../images/Vencanice/desent.jpg);
 }
 
 .page_header h1 {
