@@ -5,6 +5,7 @@
   - main_slider se ne vidi kada se uradi refresh pri smanjenom vjuportu;
   - u poslovnim dogadjajima, slab kontrast izmedju h3.back i pozadine;
   - pri smanjenju vjuporta, u trenutni card middle ulazi sledeci sa desne strane;
+  - zuta linija u footers_footer-u prekirva vecinu naziva "Plumerija";
 */
 
 
@@ -61,12 +62,11 @@ header {
     margin: 0 2rem;
         background-color: #f3f3f4; /* FIXME: vidi da li ti odgovara ovakav stil */
         padding: 15px 20px;
-        opacity: 0.95;
 }
 
 /* ASIDE LANGUAGE */
 aside.lang {
-    position: absolute;
+      position: fixed; /* FIXME: stavio fixed */
     top: 0;
         left: 2vw; /* FIXME: izjednacio sa aside.soc right */
     height: 94vh;
@@ -154,6 +154,26 @@ aside.soc a:hover {
         background: left center/100% no-repeat url(../images/dizajn/dsc03982.jpg);
     }
 
+    .blurb_left p {
+        padding-right: 10px;
+    }
+
+    .blurb_left li {
+        text-decoration: none;
+        list-style: none;
+        padding: 1rem 2vw 1rem 1vw;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        color: #999999;
+    }
+
+    .blurb_left ul {
+        padding-top: 20px;
+    }
+
+    .blurb_left .horizontal_divider {
+        width: 120%;
+    }
 
 /* PAGE THREE */
 
@@ -413,7 +433,7 @@ img.darrow {
 .progress_bar .bar {
     float: right;
     width: 100%;
-    height: 2px;
+      height: 3px; /* FIXME: povecao za 1px da bude debljine strelice */
     margin-top: -3px;
 
     /* background-color: #d0494b; */
@@ -557,6 +577,11 @@ footer p.first {
 .row_3.icon {
     max-width: 26%;
 }
+
+/* FIXME: stavio peding */
+    .row_3 h4 {
+        padding-top: 10px;
+    }
 
 .row_3 h4 a {
     font-family: var(--main-font);
@@ -779,8 +804,8 @@ span {
 
 .pager {
     position: absolute;
-    bottom: 3%;
-    left: 4%;
+        bottom: 0%; /* FIXME: da li je ovo dovoljno razmaka? */
+        left: 3%; /* FIXME: smanjio sa 4% */
     width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -912,7 +937,7 @@ span {
     }
 
     .blurb_left p {
-        padding: 3rem 7vw;
+        padding: 3rem 6vw;
         font-size: 1.3rem;
         line-height: 1.8rem;
         color: #999999;
