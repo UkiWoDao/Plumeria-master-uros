@@ -60,8 +60,6 @@ header {
     max-width: 10rem;
     max-height: 60px;
     margin: 0 2rem;
-        background-color: #f3f3f4; /* FIXME: vidi da li ti odgovara ovakav stil */
-        padding: 15px 20px;
 }
 
 /* ASIDE LANGUAGE */
@@ -85,6 +83,8 @@ aside.lang {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+
+        z-index: 3; /* FIXME: stavio da se ne podvlaci pod header img */
 }
 
 
@@ -175,11 +175,16 @@ aside.soc a:hover {
         width: 120%;
     }
 
+    #dizajn_heading {
+        padding-top: 2%;
+    }
+
 /* PAGE THREE */
 
     .deca {
-        background: url();
+        background: left center/100% no-repeat url(../images/kids/20170723-dscf3463.jpg);
     }
+
 
 /* PAGE FOUR */
 
@@ -207,6 +212,10 @@ aside.soc a:hover {
         top: 30%;
         left: 46%;
         /*box-shadow: 0 0 8px black;*/
+
+        #biznis_heading {
+
+        }
     }
 
     .middle-image {
@@ -730,13 +739,14 @@ body.page_style .page.page_style {
 
 .page_header {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     margin: 5% 0 10%;
 }
 
 .page_header h1 {
+    max-width: 35%;
     margin: 0 3%;
-    /*background-color: #f3f3f4;*/
+    background-color: #f3f3f4;
 }
 
 .collage_slider_container {
@@ -770,7 +780,7 @@ body.page_style .page.page_style {
 }
 
 h1 {
-    padding: 5%;
+    padding: 6%; /* FIXME: povecao sa 5 */
     padding-right: 0;
     max-width: 44%;
     font-size: 4.7rem;
@@ -954,7 +964,6 @@ span {
 .horizontal_divider {
     width: 132%;
     height: 3px;
-
     background-color: #E28D8E;
 }
 
